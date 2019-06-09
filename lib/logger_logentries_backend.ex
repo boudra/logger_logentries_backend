@@ -30,6 +30,10 @@ defmodule Logger.Backend.Logentries do
     {:ok, state}
   end
 
+  def handle_event(:flush, state) do
+    {:ok, state}
+  end
+
   def handle_info(_msg, state) do
     {:ok, state}
   end
